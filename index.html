@@ -12,6 +12,8 @@
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
       </style>
+  <link rel="stylesheet" type="text/css" href="./slick-1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="./slick-1.8.1/slick/slick-theme.css"/>
   <title>Go Beyond</title>
 </head>
 <body>
@@ -58,7 +60,43 @@
       <hr>
     </div>
 
-    <div id="carouselElementsHead">
+    <div class="carouselElementsHead">
+
+      <div class="carouselElements">
+        <div class="carouselCards">
+          <img src="./img/image 3.jpeg" alt="" id="carouselImage">
+          <p class="productName">Sapato Floater Preto</p>
+          <p class="productPrice">de R$ 299,00</p>
+          <p class="productDiscount"> por R$ 259,00</p>
+          <p class="productInstallment"> ou em 9x de R$ 28,87</p>
+
+          <button class="whatsappButton"><img src="./img/Vector (4).png" alt=""> Comprar</button>
+        </div>
+      </div>
+
+      <div class="carouselElements">
+        <div class="carouselCards">
+          <img src="./img/image 3.jpeg" alt="" id="carouselImage">
+          <p class="productName">Sapato Floater Preto</p>
+          <p class="productPrice">de R$ 299,00</p>
+          <p class="productDiscount"> por R$ 259,00</p>
+          <p class="productInstallment"> ou em 9x de R$ 28,87</p>
+
+          <button class="whatsappButton"><img src="./img/Vector (4).png" alt=""> Comprar</button>
+        </div>
+      </div>
+
+      <div class="carouselElements">
+        <div class="carouselCards">
+          <img src="./img/image 3.jpeg" alt="" id="carouselImage">
+          <p class="productName">Sapato Floater Preto</p>
+          <p class="productPrice">de R$ 299,00</p>
+          <p class="productDiscount"> por R$ 259,00</p>
+          <p class="productInstallment"> ou em 9x de R$ 28,87</p>
+
+          <button class="whatsappButton"><img src="./img/Vector (4).png" alt=""> Comprar</button>
+        </div>
+      </div>
 
       <div class="carouselElements">
         <div class="carouselCards">
@@ -155,6 +193,19 @@
       
     </div>
   </footer>
-  <script src="./script/script.js"></script>
+  <script>
+    $(document).ready(function(){
+     $('.banner').slick({
+         infinite: true,
+         dots: true,
+         slidesToShow: 1,
+         slidesToScroll: 1
+     });
+ });
+  </script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="./slick-1.8.1/slick/slick.min.js"></script>
+  <script type="text/javascript" src="./script/script.js"></script>
 </body>
 </html>
